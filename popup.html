@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Feed Shuffler</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>YouTube Feed Shuffler</h1>
+      <p class="hint">
+        Uso pessoal. Respeite os termos do YouTube e evite automações agressivas.
+      </p>
+
+      <label for="keywords">Keywords (1 por linha)</label>
+      <textarea id="keywords" rows="6" placeholder="ex.:\ntecnologia\nmúsica lo-fi\nfinanças pessoais"></textarea>
+
+      <div class="row">
+        <label for="videosPerKeyword">Vídeos por keyword</label>
+        <input id="videosPerKeyword" type="number" min="1" max="20" value="3" />
+      </div>
+
+      <div class="row">
+        <label for="watchSeconds">Tempo por vídeo (segundos)</label>
+        <input id="watchSeconds" type="number" min="20" max="1200" value="90" />
+      </div>
+
+      <div class="row checkbox-row">
+        <input id="shuffle" type="checkbox" checked />
+        <label for="shuffle">Embaralhar keywords</label>
+      </div>
+
+      <div class="actions">
+        <button id="saveBtn" class="secondary">Salvar</button>
+        <button id="startBtn">Iniciar sessão</button>
+        <button id="stopBtn" class="danger">Parar</button>
+      </div>
+
+      <p id="status" class="status">Pronto.</p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
