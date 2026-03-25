@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Feed Shuffler",
+  "description": "Abre buscas e vídeos por keywords para diversificar recomendações.",
+  "version": "0.1.0",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Feed Shuffler"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
