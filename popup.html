@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Feed Shuffler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>YouTube Feed Shuffler</h1>
+
+      <label for="keywords">Keywords (uma por linha)</label>
+      <textarea id="keywords" rows="8" placeholder="ex:\ninteligência artificial\nhistória do brasil"></textarea>
+
+      <div class="grid">
+        <label>
+          Vídeos/keyword
+          <input id="videosPerKeyword" type="number" min="1" max="10" value="2" />
+        </label>
+
+        <label>
+          Atraso (ms)
+          <input id="delayMs" type="number" min="0" max="10000" step="100" value="1200" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="openSearches">Abrir pesquisas</button>
+        <button id="openVideos">Abrir vídeos</button>
+      </div>
+
+      <p id="status" role="status"></p>
+    </main>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
