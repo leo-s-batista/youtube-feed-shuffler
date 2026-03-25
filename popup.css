@@ -1,0 +1,90 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 360px;
+  background: #121212;
+  color: #f2f2f2;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.hint {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 4px;
+}
+
+textarea,
+input[type='number'] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: inherit;
+  padding: 8px;
+}
+
+.row {
+  margin-top: 6px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-row label {
+  margin: 0;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #3ea6ff;
+  color: #000;
+}
+
+button.secondary {
+  background: #2f2f2f;
+  color: #fff;
+}
+
+button.danger {
+  background: #ff5f57;
+  color: #000;
+}
+
+.status {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #8fcfff;
+}
